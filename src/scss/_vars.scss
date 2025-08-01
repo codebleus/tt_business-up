@@ -1,0 +1,16 @@
+// vars
+:root {
+  // base
+  --font-family: "KyivType Sans", sans-serif;
+  --container-offset: 0;
+  --content-width: 136rem;
+
+  // colors
+}
+
+@media (max-width: 49em) {
+  :root {
+    // base
+    --container-offset: 4rem;
+  }
+}

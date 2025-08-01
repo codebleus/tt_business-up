@@ -1,0 +1,12 @@
+// google fonts
+@import 'https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&display=swap';
+
+// local fonts
+@include font-face('KyivType Sans', 'KyivTypeSansRegular.woff2', 400, normal);
+@include font-face('KyivType Sans', 'KyivTypeSansMedium.woff2', 500, normal);
+@include font-face(
+  'GT Eesti Pro Text Book',
+  'GTEestiProTextBook.woff2',
+  400,
+  normal
+);
