@@ -5,11 +5,14 @@
 }
 
 html {
-  font-size: 0.52083vw;
+  font-size: calc((10 / 1440) * 100vw);
+
+  @media (min-width: 90.01em) {
+    font-size: calc((11 / 1920) * 100vw);
+  }
 
   @media (max-width: 48em) {
-    font-size: 1.5625vw;
-    font-size: calc((100 / 375) * 5vw);
+    font-size: calc((100 / 390) * 5vw);
   }
 }
 
@@ -17,6 +20,7 @@ html {
   height: 100%;
   font-family: var(--font-family, sans-serif);
   -webkit-text-size-adjust: 100%;
+  color: var(--c-black);
   scroll-behavior: smooth;
 }
 
@@ -24,7 +28,11 @@ html {
   margin: 0;
   min-width: 360px;
   min-height: 100%;
-  font-size: 16px;
+  font-size: 1.6rem;
+
+  @media (max-width: 48em) {
+    font-size: 3.2rem;
+  }
 }
 
 img {
@@ -37,8 +45,23 @@ a {
   text-decoration: none;
 }
 
-.site-container {
-  overflow: hidden;
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+  margin: 0;
 }
 
 .is-hidden {
@@ -87,7 +110,10 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 var(--container-offset);
-  width: var(--container-width);
+
+  @media (min-width: 48.01em) {
+    width: var(--container-width);
+  }
 }
 
 .centered {

@@ -1,0 +1,131 @@
+.reviews-label {
+  display: inline-flex;
+  column-gap: 1.6rem;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 6.8rem;
+  min-width: 16.6rem;
+  color: var(--c-white);
+  background: rgba(240, 231, 223, 0.12);
+
+  // .reviews-label__icon
+
+  &__icon {
+    display: inline-flex;
+    flex: 0 0 7rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    background-color: var(--c-white);
+
+    svg {
+      width: 4.4rem;
+      height: 4.4rem;
+    }
+  }
+
+  // .reviews-label__text
+
+  &__text {
+    display: flex;
+    column-gap: 3.2rem;
+    align-items: center;
+    padding-right: 3.2rem;
+  }
+
+  // .reviews-label__subtitle
+
+  &__subtitle {
+    display: inline-flex;
+    column-gap: 0.4rem;
+    align-items: center;
+  }
+
+  // .reviews-label__subtitle-txt
+
+  &__subtitle-txt {
+    font-weight: 500;
+
+    &:not(:last-child) {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: -0.8rem;
+        top: 50%;
+        border-radius: 50%;
+        width: 0.6rem;
+        height: 0.6rem;
+        background-color: var(--c-white);
+        transform: translate(100%, -50%);
+      }
+    }
+  }
+
+  // .reviews-label__txt
+
+  &__txt {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 48em) {
+  .reviews-label {
+    height: 7.8rem;
+
+    &__subtitle {
+      position: relative;
+      column-gap: 2.2rem;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: -1.6rem;
+        top: 50%;
+        width: 1px;
+        height: 2.4rem;
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: translate(100%, -50%);
+      }
+    }
+  }
+}
+
+@media (min-width: 48.01em) {
+  .reviews-label {
+    column-gap: 0.8rem;
+    border-radius: 3.4rem;
+    padding: 0.4rem;
+
+    &__icon {
+      flex: 0 0 4rem;
+      width: 4rem;
+      height: 4rem;
+
+      svg {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
+
+    &__text {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-right: 1.6rem;
+      row-gap: 0.2rem;
+    }
+
+    &__subtitle-txt {
+      &:not(:last-child) {
+        &::after {
+          right: -0.4rem;
+          width: 0.3rem;
+          height: 0.3rem;
+        }
+      }
+    }
+  }
+}

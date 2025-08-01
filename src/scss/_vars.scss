@@ -3,9 +3,14 @@
   // base
   --font-family: "KyivType Sans", sans-serif;
   --container-offset: 0;
-  --content-width: 136rem;
+  --container-width: 136rem;
 
   // colors
+  --c-white: #fff;
+  --c-black: #1b1b1b;
+
+  // props
+  --p-tr: 0.5s cubic-bezier(0.87, 0, 0.13, 1);
 }
 
 @media (max-width: 49em) {

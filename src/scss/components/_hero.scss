@@ -1,0 +1,321 @@
+.hero {
+  position: relative;
+
+  &__container {
+    position: relative;
+  }
+
+  &__reviews-label {
+    position: absolute;
+    top: 26rem;
+    z-index: 2;
+  }
+
+  &__slider {
+    &.swiper {
+      overflow: visible;
+    }
+  }
+
+  &__slide {
+    &.swiper-slide {
+      list-style: none;
+    }
+  }
+
+  &__pagination,
+  &__scroll-down {
+    position: absolute;
+    z-index: 3;
+  }
+
+  &__pagination {
+    left: 50%;
+    bottom: 6.4rem;
+    transform: translateX(-50%);
+  }
+
+  &__scroll-down {
+    display: none;
+  }
+}
+
+.slide-hero {
+  &.swiper-slide {
+    height: auto;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 38.2rem;
+    padding-bottom: 25.6rem;
+  }
+
+  &__heading,
+  &__text {
+    color: var(--c-white);
+  }
+
+  &__heading {
+    position: relative;
+    margin-bottom: 4.8rem;
+    max-width: 64rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 10rem;
+      bottom: -4rem;
+      width: 17.4rem;
+      height: 3.4rem;
+      background: url("../img/svg/435.svg") center / contain no-repeat;
+    }
+  }
+
+  &__text {
+    margin-bottom: 4.8rem;
+    max-width: 59rem;
+    letter-spacing: -0.015rem;
+  }
+
+  &__bg-wrap {
+    position: absolute;
+    inset: 0 0 0 50%;
+    overflow: hidden;
+    border-radius: 0 0 2.4rem 2.4rem;
+    width: 100dvw;
+    transform: translateX(-50%);
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        linear-gradient(0deg, rgba(70, 50, 40, 0.3), rgba(70, 50, 40, 0.3));
+    }
+  }
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.pagination-hero {
+  counter-reset: item;
+  display: flex;
+  column-gap: 1.2rem;
+
+  &__item {
+    flex: 1 1 auto;
+    height: 4px;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    flex: 1 1 auto;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 2rem;
+    padding: 0.4rem;
+    color: var(--c-white);
+    background: rgba(255, 255, 255, 0.12);
+    transition: color var(--p-tr), background-color var(--p-tr),
+      column-gap var(--p-tr);
+    cursor: pointer;
+    backdrop-filter: blur(0.8rem);
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.8rem;
+    padding-left: 1.2rem;
+    width: 12rem;
+    text-align: left;
+    transition: padding-top var(--p-tr);
+    row-gap: 1.6rem;
+
+    &::before {
+      content: counter(item) "";
+      display: inline-flex;
+      flex: 0 0 3.2rem;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 50%;
+      width: 3.2rem;
+      height: 3.2rem;
+      font-family: "Golos Text", sans-serif;
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 100%;
+      background: rgba(255, 255, 255, 0.12);
+      transition: color var(--p-tr), border var(--p-tr);
+    }
+  }
+
+  &__image-wrap {
+    flex: 0 0 0;
+    overflow: hidden;
+    margin: 0;
+    border-radius: 1.7rem;
+    width: 0;
+    height: 13rem;
+    transition: flex 0.5s linear, width 0.5s linear;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__progress,
+  &__progress::before {
+    border-radius: 6.4rem;
+  }
+
+  &__progress {
+    --scaleX: 0;
+    --opacity: 0;
+
+    position: relative;
+    display: block;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(0.2rem);
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: var(--c-white);
+      opacity: var(--opacity);
+      transform: scaleX(var(--scaleX));
+      transform-origin: left;
+      transition: opacity 0.3s linear;
+      will-change: transform;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .hero__pagination {
+    padding: 0 var(--container-offset);
+    width: 100%;
+  }
+
+  .pagination-hero__content {
+    display: none;
+  }
+}
+
+@media (min-width: 48.01em) {
+  .hero {
+    padding-bottom: 2.4rem;
+
+    .reviews-label {
+      display: none;
+    }
+
+    &__pagination {
+      bottom: 4rem;
+      max-width: var(--container-width);
+    }
+
+    &__scroll-down {
+      left: 50%;
+      bottom: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      border-radius: 50%;
+      width: 4rem;
+      height: 4rem;
+      box-shadow: 1.9rem 5.1rem 2.2rem rgba(113, 87, 71, 0.03),
+        1.1rem 2.8rem 1.8rem rgba(113, 87, 71, 0.1),
+        0.5rem 1.3rem 1.3rem rgba(113, 87, 71, 0.17),
+        0.1rem 0.3rem 0.7rem rgba(113, 87, 71, 0.2);
+      background: #faf5f0;
+      transform: translate(-50%, 0);
+
+      svg {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
+
+  .slide-hero__content {
+    padding-top: 20.3rem;
+    padding-bottom: 28.6rem;
+    min-height: 82rem;
+  }
+
+  .slide-hero__heading {
+    margin-bottom: 2.4rem;
+    max-width: 86.3rem;
+
+    &::after {
+      right: 6rem;
+      bottom: -3.2rem;
+      width: 17.5rem;
+      height: 2rem;
+    }
+  }
+
+  .slide-hero__text {
+    margin-bottom: 3.1rem;
+    max-width: 46.6rem;
+  }
+
+  .slide-hero__bg-wrap {
+    border-radius: 0 0 1.6rem 1.6rem;
+  }
+
+  .pagination-hero {
+    column-gap: 0.4rem;
+  }
+
+  .pagination-hero__item {
+    counter-increment: item;
+    display: flex;
+    flex: 1 0 14.4rem;
+    flex-direction: column;
+    height: auto;
+    row-gap: 1.6rem;
+
+    &._is-active {
+      .pagination-hero__content {
+        column-gap: 2.9rem;
+        color: var(--c-black);
+        background-color: var(--c-white);
+      }
+
+      .pagination-hero__text {
+        padding-top: 1.2rem;
+      }
+
+      .pagination-hero__text::before {
+        border: 1px solid rgba(213, 175, 98, 0.6);
+        color: var(--c-black);
+      }
+
+      .pagination-hero__image-wrap {
+        flex: 0 0 12.4rem;
+        width: 12.4rem;
+      }
+    }
+  }
+
+  .pagination-hero__progress,
+  .pagination-hero__progress::before {
+    border-radius: 3.2rem;
+  }
+}

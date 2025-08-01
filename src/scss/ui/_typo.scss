@@ -1,0 +1,51 @@
+.txt {
+  font-size: 1.8rem;
+  line-height: 140%;
+
+  &--l {
+    font-size: 1.4rem;
+    line-height: 124%;
+    letter-spacing: -0.01em;
+  }
+
+  &--s {
+    font-size: 1.2rem;
+    line-height: 124%;
+    letter-spacing: -0.01em;
+  }
+}
+
+.h {
+  font-family: "GTEestiProTextBook", sans-serif;
+
+  &--xl {
+    font-weight: 375;
+    font-size: 6rem;
+    line-height: 94%;
+    letter-spacing: -0.04em;
+  }
+}
+
+@media (max-width: 48em) {
+  .txt {
+    font-size: 3.2rem;
+
+    &--l {
+      font-family: "Golos Text", sans-serif;
+      font-size: 3rem;
+      line-height: 132%;
+    }
+
+    &--s {
+      font-size: 2.8rem;
+    }
+  }
+
+  .h {
+    &--xl {
+      font-size: 8.8rem;
+      line-height: 84%;
+      letter-spacing: -0.02em;
+    }
+  }
+}
