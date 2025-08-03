@@ -278,14 +278,16 @@ html._show-menu {
       &--has-submenu {
         .header__nav-link {
           display: inline-flex;
-          column-gap: 0.6rem;
+          column-gap: 1.2rem;
           align-items: center;
 
           &::after {
-            content: url('data:image/svg+xml,<svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.918 10.25L12.418 15.75L6.91797 10.25" stroke="white" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="round"/></svg>');
-            flex: 0 0 2.4rem;
-            width: 2.4rem;
-            height: 2.4rem;
+            content: "";
+            flex: 0 0 1.4rem;
+            width: 1.4rem;
+            height: 1.4rem;
+            background: url("../../img/svg/arr-down-white.svg") center / contain
+              no-repeat;
             transition: transform var(--p-tr);
 
             ._show-submenu & {

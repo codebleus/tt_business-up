@@ -11,17 +11,21 @@
     column-gap: 3rem;
     align-items: center;
     justify-content: space-between;
-    padding: 0.6rem 0;
+    padding: 0.86rem 0;
     font-weight: 500;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     transition: color var(--p-tr), border-bottom var(--p-tr);
 
     &::after {
-      content: url('data:image/svg+xml,<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.1793 16.3292C10.0231 16.4854 9.76985 16.4854 9.61364 16.3291L9.33135 16.0469C9.17514 15.8906 9.17514 15.6374 9.33135 15.4812L13.5295 11.283C13.7815 11.0311 13.603 10.6002 13.2466 10.6002H4.5692C4.34828 10.6002 4.1692 10.4211 4.1692 10.2002V9.80144C4.1692 9.58052 4.34828 9.40144 4.5692 9.40144H13.2466C13.603 9.40144 13.7815 8.97058 13.5295 8.71859L9.33135 4.52047C9.17514 4.36426 9.17514 4.11099 9.33135 3.95478L9.61364 3.67249C9.76985 3.51628 10.0231 3.51628 10.1793 3.67249L16.2248 9.71798C16.381 9.87419 16.381 10.1275 16.2248 10.2837L10.1793 16.3292Z" fill="%23AC873E"/></svg>');
-      flex: 0 0 2rem;
-      width: 2rem;
-      height: 2rem;
+      content: "";
+      flex: 0 0 1.4rem;
+      width: 1.4rem;
+      height: 1.4rem;
+      background-image: url("../../img/svg/arr-right.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
       opacity: 0.6;
       transition: opacity var(--p-tr), transform var(--p-tr);
     }
@@ -177,10 +181,11 @@
       }
 
       &::after {
-        content: url('data:image/svg+xml,<svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.69126 8.15933C4.61323 8.23735 4.6127 8.36363 4.69057 8.44176L9.85438 13.6056C9.89476 13.6458 9.94793 13.6636 10.0008 13.6622C10.0527 13.6629 10.1047 13.6437 10.1444 13.6042L15.3089 8.43968C15.387 8.36158 15.387 8.23465 15.3089 8.15657L14.4133 7.26094C14.3352 7.18307 14.2089 7.18365 14.1309 7.26163L10.2822 11.1103C10.126 11.2665 9.87276 11.2665 9.71655 11.1103L5.86931 7.26301C5.79124 7.1852 5.66492 7.18586 5.58688 7.2637L4.69126 8.15933Z" fill="%231B1B1B"/></svg>');
-        flex: 0 0 4rem;
-        width: 4rem;
-        height: 4rem;
+        content: "";
+        flex: 0 0 2.2rem;
+        width: 2.2rem;
+        height: 2.2rem;
+        background-image: url("../../img/svg/arr-black.svg");
 
         ._is-active & {
           opacity: 1;
