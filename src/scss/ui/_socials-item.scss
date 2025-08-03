@@ -1,0 +1,35 @@
+.socials-item {
+  &__inner {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    width: 3.6rem;
+    height: 3.6rem;
+    box-shadow: 0 0.2rem 0.2rem rgba(58, 58, 58, 0.08);
+    background-color: var(--c-white);
+    transition: border var(--p-tr);
+    backdrop-filter: blur(1rem);
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .socials-item {
+    &__inner {
+      border-radius: 18rem;
+      width: 8.8rem;
+      height: 7.2rem;
+    }
+
+    &__icon {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}

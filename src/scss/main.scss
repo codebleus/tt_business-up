@@ -3,12 +3,18 @@
 @import "mixins";
 @import "fonts";
 @import "settings";
+@import "common";
 
 // components
 @import "./components/header";
+@import "./components/submenu-header";
+@import "./components/contacts-submenu-header";
 @import "./components/hero";
 
 // ui
 @import "./ui/typo";
 @import "./ui/reviews-label";
 @import "./ui/button";
+@import "./ui/hamburger";
+@import "./ui/socials-item";
+@import "./ui/service-card";

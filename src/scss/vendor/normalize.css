@@ -81,7 +81,21 @@ pre {
  */
 
 a {
-  background-color: transparent;
+  color: unset;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+
+button,
+input,
+a,
+textarea {
+  text-transform: inherit;
+
+  cursor: pointer;
+  font: inherit;
 }
 
 /**
@@ -238,6 +252,18 @@ button:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+
+button {
+  padding: 0;
+
+  border: none;
+
+  font: inherit;
+  text-align: inherit;
+  color: inherit;
+
+  background-color: transparent;
 }
 
 /**

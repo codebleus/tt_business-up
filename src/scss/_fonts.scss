@@ -2,6 +2,7 @@
 @import "https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&display=swap";
 
 // local fonts
+@include font-face("KyivType Sans", "KyivTypeSansLight", 300, normal);
 @include font-face("KyivType Sans", "KyivTypeSansRegular", 400, normal);
 @include font-face("KyivType Sans", "KyivTypeSansMedium", 500, normal);
 @include font-face("GTEestiProTextBook", "GTEestiProTextBook", 400, normal);

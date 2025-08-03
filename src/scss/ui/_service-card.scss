@@ -1,0 +1,49 @@
+.service-card {
+  &__inner {
+    display: flex;
+    column-gap: 2.4rem;
+  }
+
+  &__image-wrap {
+    flex: 0 0 16.8rem;
+    border-radius: 1.6rem;
+    padding: 0.4rem;
+    width: 16.8rem;
+    height: 16.8rem;
+    box-shadow: var(--p-shadow);
+    background-color: var(--c-white);
+  }
+
+  &__image {
+    display: block;
+    border-radius: 1.2rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.3rem;
+  }
+
+  &__heading {
+    margin-bottom: 0.7rem;
+    font-weight: 500;
+  }
+
+  &__txt.txt {
+    display: -webkit-box;
+    overflow: hidden;
+    margin-bottom: 1.3rem;
+    font-size: 1.5rem;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  &__btn {
+    margin-right: auto;
+  }
+}

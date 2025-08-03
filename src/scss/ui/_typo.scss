@@ -13,6 +13,12 @@
     line-height: 124%;
     letter-spacing: -0.01em;
   }
+
+  &--xs {
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 142%;
+  }
 }
 
 .h {
@@ -38,6 +44,10 @@
 
     &--s {
       font-size: 2.8rem;
+    }
+
+    &--xs {
+      font-size: 2.2rem;
     }
   }
 

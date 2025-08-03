@@ -22,11 +22,27 @@ html {
   -webkit-text-size-adjust: 100%;
   color: var(--c-black);
   scroll-behavior: smooth;
+
+  &:not(._show-submenu) {
+    &::after {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 49;
+    background: rgba(27, 27, 27, 0.6);
+    transition: opacity var(--p-tr), visibility var(--p-tr);
+  }
 }
 
 .page__body {
   margin: 0;
-  min-width: 360px;
+  min-width: 320px;
   min-height: 100%;
   font-size: 1.6rem;
 

@@ -8,9 +8,14 @@
   // colors
   --c-white: #fff;
   --c-black: #1b1b1b;
+  --c-black2: #000;
+  --c-gold: #ac873e;
+  --c-brown: #7a6b63;
+  --c-beige: #faf5f0;
 
   // props
   --p-tr: 0.5s cubic-bezier(0.87, 0, 0.13, 1);
+  --p-shadow: 0 0.2rem 0.2rem rgba(58, 58, 58, 0.08);
 }
 
 @media (max-width: 49em) {
