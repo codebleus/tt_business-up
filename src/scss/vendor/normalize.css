@@ -25,6 +25,16 @@ html {
 body {
   margin: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+  margin: 0;
+}
 
 /**
  * Render the `main` element consistently in IE.
@@ -402,4 +412,29 @@ template {
 
 [hidden] {
   display: none;
+}
+
+/* Other styles
+   ========================================================================== */
+
+/**
+ * Remove list style
+ */
+
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Responsive img
+ */
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
 }

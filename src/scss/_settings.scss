@@ -14,6 +14,10 @@ html {
   @media (max-width: 48em) {
     font-size: calc((100 / 390) * 5vw);
   }
+
+  @media (min-width: 2560px) {
+    font-size: 16px;
+  }
 }
 
 .page {
@@ -49,35 +53,6 @@ html {
   @media (max-width: 48em) {
     font-size: 3.2rem;
   }
-}
-
-img {
-  height: auto;
-  max-width: 100%;
-  object-fit: cover;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-figure {
-  margin: 0;
 }
 
 .is-hidden {
@@ -129,6 +104,7 @@ figure {
 
   @media (min-width: 48.01em) {
     width: var(--container-width);
+    max-width: 2560px;
   }
 }
 

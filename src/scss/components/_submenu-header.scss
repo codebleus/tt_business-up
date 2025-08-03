@@ -69,19 +69,11 @@
       flex-direction: column;
     }
 
-    &__sublist {
-      max-height: 80%;
-    }
-
     &__sublist,
     &__services,
     &__list {
       overflow: auto;
-    }
-
-    &__sublist,
-    &__services {
-      max-height: 37.6rem;
+      max-height: 44dvh;
     }
 
     &__submenu-body,

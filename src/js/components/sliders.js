@@ -30,10 +30,10 @@ document.addEventListener("DOMContentLoaded", function () {
       speed: 1000,
       rewind: true,
       effect: "fade",
-      //   autoplay: {
-      //     delay: 5000,
-      //     disableOnInteraction: false,
-      //   },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
       fadeEffect: {
         crossFade: true,
       },

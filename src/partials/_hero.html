@@ -1,17 +1,18 @@
 <section class="hero">
   <div class="hero__container container">
-    <div class="hero__reviews-label reviews-label">
-      <figure aria-label="Отзывы на Яндексе" class="reviews-label__icon">
+    <a href="#" class="hero__reviews-label reviews-label">
+      <span class="reviews-label__icon" aria-hidden="true">
         <svg><use href="#yandex-svg"></use></svg>
-      </figure>
-      <div class="reviews-label__text">
-        <p class="reviews-label__subtitle txt txt--l">
+      </span>
+
+      <span class="reviews-label__text">
+        <span class="reviews-label__subtitle txt txt--l">
           <span class="reviews-label__subtitle-txt">Рейтинг</span>
           <span class="reviews-label__subtitle-txt">4.9</span>
-        </p>
-        <p class="reviews-label__txt txt txt--s">135 отзывов</p>
-      </div>
-    </div>
+        </span>
+        <span class="reviews-label__txt txt txt--s">135 отзывов</span>
+      </span>
+    </a>
     <div class="hero__slider swiper">
       <ul class="hero__slider-wrapper swiper-wrapper">
         <li id="hero-slide-0" class="hero__slide slide-hero swiper-slide">
@@ -255,10 +256,39 @@
         <button
           type="button"
           class="pagination-hero__content"
-          aria-label="Перейти к слайду: Косметология — уходы, инъекции, лифтинг"
+          aria-label="Перейти к слайду: Ангел Concept — центр косметологии в Ставрополе"
           aria-controls="hero-slide-0"
           aria-expanded="true"
           aria-current="true"
+        >
+          <span class="pagination-hero__text txt txt--s">
+            Ангел Concept — центр косметологии в Ставрополе
+          </span>
+          <span class="pagination-hero__image-wrap">
+            <picture>
+              <source
+                srcset="img/bg/18.webp"
+                media="(min-width: 48.01em)"
+                type="image/webp"
+              />
+              <img
+                src="img/bg/18.webp"
+                class="slide-hero__bg"
+                alt="Фоновое изображение к разделу: Ангел Concept — центр косметологии в Ставрополе"
+              />
+            </picture>
+          </span>
+        </button>
+        <span class="pagination-hero__progress"></span>
+      </li>
+
+      <li class="pagination-hero__item">
+        <button
+          type="button"
+          class="pagination-hero__content"
+          aria-label="Перейти к слайду: Косметология: уходы, инъекции, лифтинг"
+          aria-controls="hero-slide-1"
+          aria-expanded="false"
         >
           <span class="pagination-hero__text txt txt--s">
             Косметология: уходы, инъекции, лифтинг
@@ -266,43 +296,14 @@
           <span class="pagination-hero__image-wrap">
             <picture>
               <source
-                srcset="img/bg/18.webp"
+                srcset="img/content/23.webp"
                 media="(min-width: 48.01em)"
                 type="image/webp"
               />
               <img
-                src="img/bg/18.webp"
+                src="img/content/23.webp"
                 class="slide-hero__bg"
-                alt="Фоновое изображение к разделу: Косметология — уходы, инъекции, лифтинг"
-              />
-            </picture>
-          </span>
-        </button>
-        <span class="pagination-hero__progress"></span>
-      </li>
-
-      <li class="pagination-hero__item">
-        <button
-          type="button"
-          class="pagination-hero__content"
-          aria-label="Перейти к слайду: Коррекция фигуры и силуэта"
-          aria-controls="hero-slide-1"
-          aria-expanded="false"
-        >
-          <span class="pagination-hero__text txt txt--s">
-            Коррекция фигуры и силуэта
-          </span>
-          <span class="pagination-hero__image-wrap">
-            <picture>
-              <source
-                srcset="img/bg/18.webp"
-                media="(min-width: 48.01em)"
-                type="image/webp"
-              />
-              <img
-                src="img/bg/18.webp"
-                class="slide-hero__bg"
-                alt="Фоновое изображение к разделу: Коррекция фигуры и силуэта"
+                alt="Фоновое изображение к разделу: Косметология: уходы, инъекции, лифтинг"
                 loading="lazy"
               />
             </picture>
@@ -315,24 +316,24 @@
         <button
           type="button"
           class="pagination-hero__content"
-          aria-label="Перейти к слайду: SPA и европейские массажи"
+          aria-label="Перейти к слайду: Коррекция фигуры и силуэта"
           aria-controls="hero-slide-2"
           aria-expanded="false"
         >
           <span class="pagination-hero__text txt txt--s">
-            SPA и европейские массажи
+            Коррекция фигуры и силуэта
           </span>
           <span class="pagination-hero__image-wrap">
             <picture>
               <source
-                srcset="img/bg/18.webp"
+                srcset="img/content/25.webp"
                 media="(min-width: 48.01em)"
                 type="image/webp"
               />
               <img
-                src="img/bg/18.webp"
+                src="img/content/25.webp"
                 class="slide-hero__bg"
-                alt="Фоновое изображение к разделу: SPA и европейские массажи"
+                alt="Фоновое изображение к разделу: Коррекция фигуры и силуэта"
                 loading="lazy"
               />
             </picture>
@@ -345,24 +346,54 @@
         <button
           type="button"
           class="pagination-hero__content"
-          aria-label="Перейти к слайду: Велнес-программы и флоатация"
+          aria-label="Перейти к слайду: SPA и европейские массажи"
           aria-controls="hero-slide-3"
           aria-expanded="false"
         >
           <span class="pagination-hero__text txt txt--s">
-            Велнес-программы и флоатация
+            SPA и европейские массажи
           </span>
           <span class="pagination-hero__image-wrap">
             <picture>
               <source
-                srcset="img/bg/18.webp"
+                srcset="img/content/26.webp"
                 media="(min-width: 48.01em)"
                 type="image/webp"
               />
               <img
-                src="img/bg/18.webp"
+                src="img/content/26.webp"
                 class="slide-hero__bg"
-                alt="Фоновое изображение к разделу: Велнес-программы и флоатация"
+                alt="Фоновое изображение к разделу: SPA и европейские массажи"
+                loading="lazy"
+              />
+            </picture>
+          </span>
+        </button>
+        <span class="pagination-hero__progress"></span>
+      </li>
+
+      <li class="pagination-hero__item">
+        <button
+          type="button"
+          class="pagination-hero__content"
+          aria-label="Перейти к слайду: Велнес-программы и флоатация"
+          aria-controls="hero-slide-4"
+          aria-expanded="false"
+        >
+          <span class="pagination-hero__text txt txt--s">
+            Велнес-программы и флоатация
+          </span>
+          <span class="pagination-hero__image-wrap">
+            <picture>
+              <source
+                srcset="img/content/27.webp"
+                media="(min-width: 48.01em)"
+                type="image/webp"
+              />
+              <img
+                src="img/content/27.webp"
+                class="slide-hero__bg"
+                alt="Фоновое изображение к разделу: Велнес-программы и флоатация"
                 loading="lazy"
               />
             </picture>
@@ -376,7 +407,7 @@
           type="button"
           class="pagination-hero__content"
           aria-label="Перейти к слайду: Beauty-услуги: волосы, ногти, макияж"
-          aria-controls="hero-slide-4"
+          aria-controls="hero-slide-5"
           aria-expanded="false"
         >
           <span class="pagination-hero__text txt txt--s">
@@ -385,44 +416,14 @@
           <span class="pagination-hero__image-wrap">
             <picture>
               <source
-                srcset="img/bg/18.webp"
+                srcset="img/content/28.webp"
                 media="(min-width: 48.01em)"
                 type="image/webp"
               />
               <img
-                src="img/bg/18.webp"
+                src="img/content/28.webp"
                 class="slide-hero__bg"
                 alt="Фоновое изображение к разделу: Beauty-услуги: волосы, ногти, макияж"
-                loading="lazy"
-              />
-            </picture>
-          </span>
-        </button>
-        <span class="pagination-hero__progress"></span>
-      </li>
-
-      <li class="pagination-hero__item">
-        <button
-          type="button"
-          class="pagination-hero__content"
-          aria-label="Перейти к слайду: Тайские и балийские массажи"
-          aria-controls="hero-slide-5"
-          aria-expanded="false"
-        >
-          <span class="pagination-hero__text txt txt--s">
-            Тайские и балийские массажи
-          </span>
-          <span class="pagination-hero__image-wrap">
-            <picture>
-              <source
-                srcset="img/bg/18.webp"
-                media="(min-width: 48.01em)"
-                type="image/webp"
-              />
-              <img
-                src="img/bg/18.webp"
-                class="slide-hero__bg"
-                alt="Фоновое изображение к разделу: Тайские и балийские массажи"
                 loading="lazy"
               />
             </picture>
