@@ -41,6 +41,10 @@
 }
 
 .slide-hero {
+  &:not(:last-child) {
+    opacity: 0;
+  }
+
   &.swiper-slide {
     height: auto;
   }
